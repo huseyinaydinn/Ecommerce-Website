@@ -1,0 +1,104 @@
+.navbar {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #6b21a8;
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .basket-like-icons {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            position: relative;
+
+            .basket-amount {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: -10px;
+                right: -12px;
+                font-size: 16px;
+                background-color: #6b21a8;
+                border-radius: 50%;
+                text-align: center;
+                color: white;
+            }
+        }
+
+        svg {
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        .input-wrapper {
+            position: relative;
+
+            input {
+                width: 300px;
+                padding: 8px 20px;
+                padding-right: 38px;
+                font-size: 1.2rem;
+                outline: none;
+                border: none;
+                border-radius: 20px;
+                background: #f3f4f6;
+            }
+
+            .search-magnet {
+                position: absolute;
+                top: 7px;
+                left: 265px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar .logo {
+        font-size: 14px;
+    }
+
+    .navbar .navbar-right {
+        gap: 5px;
+
+        .basket-like-icons {
+            gap: 5px;
+        }
+
+        svg {
+            font-size: 20px;
+        }
+
+        .input-wrapper {
+            input {
+                width: 150px;
+                padding: 5px 10px;
+                padding-right: 30px;
+                font-size: 0.7rem;
+                outline: none;
+                border-radius: 20px;
+                background: #e1e1e1;
+            }
+
+            .search-magnet {
+                position: absolute;
+                top: 2px;
+                left: 123px;
+            }
+        }
+    }
+
+
+}

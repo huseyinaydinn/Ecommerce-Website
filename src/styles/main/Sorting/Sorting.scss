@@ -1,0 +1,32 @@
+.Sorting-Container {
+    background-color: #f3f4f6;
+    margin: 24px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+
+    .select-container {
+        width: 300px;
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 2px;
+        box-shadow: 0 0 2px rgb(204, 204, 204);
+        transition: all .5s ease;
+        position: relative;
+        font-size: 14px;
+        color: #474747;
+        height: 100%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Sorting-Container {
+        .MuiFormControl-root {
+            width: 70%;
+        }
+
+    }
+}

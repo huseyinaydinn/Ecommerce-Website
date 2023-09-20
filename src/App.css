@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
+@import "./styles/header/navbar.css"; /* Navbar CSS */
+@import "./styles/main/SliderComp/Slider.css"; /* Main > Slider CSS */
+@import "./styles/main/Sorting/Sorting.css"; /* Sorting CSS */
+@import "./styles/main/Category/Category.css"; /* Category CSS */
+@import "./styles/main/Product/Product.css"; /* Product CSS */
+@import "./styles/productDetail/productDetail.css"; /* Product Detail Page CSS */
+@import "./styles/card/card.css"; /* Card(Basket) Css */
+
+/* Css about all page start*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  width: 100%;
+  padding: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category-product-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 0;
+  }
+}
+
+/* CSS about all page end */

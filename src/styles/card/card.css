@@ -1,0 +1,138 @@
+.card-container {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f4f6;
+  margin: 20px 0px;
+}
+.card-container .card-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.card-container .card-left img {
+  width: 150px;
+  height: 150px;
+}
+.card-container .card-left .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.card-container .card-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.card-container .card-right .card-price {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #6b21a8;
+  text-align: center;
+}
+.card-container .card-right .card-btn {
+  padding: 5px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #f43f5e;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.card-container .card-right .card-btn:hover {
+  background-color: #e11d48;
+}
+
+.card-total-price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 32px;
+  text-align: right;
+  margin-top: 20px;
+  color: #6b21a8;
+  font-weight: 600;
+}
+.card-total-price span {
+  font-size: 24px;
+  color: #000;
+}
+
+.empty-basket {
+  height: 80vh;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: auto;
+}
+
+.basket-homepage {
+  font-size: 30px;
+  background-color: #6b21a8;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.card-page {
+  display: flex;
+  flex-direction: column;
+}
+.card-page .removeAll-btn {
+  max-width: 200px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  transition: background-color 0.4s;
+  cursor: pointer;
+  background: #f43f5e;
+  margin-left: auto;
+}
+.card-page .removeAll-btn:hover {
+  background: #e11d48;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    padding: 10px 5px;
+    flex-direction: column;
+  }
+  .card-container .card-left {
+    gap: 5px;
+    flex-direction: column;
+  }
+  .card-container .card-left img {
+    width: 100px;
+    height: 100px;
+  }
+  .card-container .card-left .card-title {
+    font-size: 14px;
+  }
+  .card-container .card-right .card-price {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .card-container .card-right .card-btn {
+    font-size: 14x;
+  }
+  .card-page {
+    align-items: center;
+  }
+  .card-page .removeAll-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=card.css.map */
